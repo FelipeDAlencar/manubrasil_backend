@@ -13,7 +13,7 @@ from .schemas import *
 from .email_manager import send_email_recover_password_effective_opos, send_email_recover_password_effective_manubrasil
 import bcrypt
 from dotenv import load_dotenv
-
+load_dotenv()
 
 router = Router()
 
