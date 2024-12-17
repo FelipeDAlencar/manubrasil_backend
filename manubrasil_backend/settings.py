@@ -10,18 +10,32 @@ SECRET_KEY = 'django-insecure-7=o8acz9&#5$tcr-(xa2vrf+hpjb^75im_g)+&_2dsf#r#m*mo
 
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = []
 
 ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
+    "https://back.manubrasil.app.br",
+    "https://sistema.manubrasil.app.br",
+    'http://127.0.0.1',
+    'http://localhost',
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:5173',
 )
 
 CORS_ALLOWED_ORIGINS = [
-
+    'https://back.manubrasil.app.br',
+    'https://sistema.manubrasil.app.br',
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:5173',
+    'http://127.0.0.1',
 ]
 
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['https://back.manubrasil.app.br',
+                        'https://sistema.manubrasil.app.br']
 
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 20971520
