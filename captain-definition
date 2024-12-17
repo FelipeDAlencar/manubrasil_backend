@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 2,
+  "repoUrl": "https://github.com/FelipeDAlencar/manubrasil_backend.git",
+  "dockerfilePath": "./Dockerfile"
+}

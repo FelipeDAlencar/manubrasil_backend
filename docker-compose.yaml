@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  django:
+    restart: always
+    image: sgp_backend:0.0.1
+    build: .
+    ports:
+      - "8000:8000"
+      
